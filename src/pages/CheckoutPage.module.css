@@ -4,6 +4,7 @@
     align-self: flex-start;
     
 }
+
  .container{
     display: flex;
     flex-direction: column;
@@ -132,8 +133,9 @@ height: 20px;
 .mainRow{
     display: flex;
   flex-direction: row;
+  /* align-items: flex-start; */
   align-items: flex-start;
-   gap:96px
+   gap:96px;
 }
 .ColumnsContainer{
     display: flex;
@@ -144,7 +146,7 @@ height: 20px;
 }
 @media screen and (max-width: 800px) {
     .input{
-        width: 278px;
+        width: 100%;
     }
     .gridRow{
       display: flex;
@@ -163,9 +165,8 @@ height: 20px;
   max-width: 514px;
   
 }
- @media screen and (max-width: 800px) {
-  .mainRow{
+.mainRow{
     flex-direction: column;
   }
- }
+
 }

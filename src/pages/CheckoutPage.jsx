@@ -183,7 +183,7 @@ export default function CheckoutPage() {
         </Formik>
         <OrderSummary />
       </div>
-      <Feature />
+      {/* <Feature /> */}
     </div>
   );
 }

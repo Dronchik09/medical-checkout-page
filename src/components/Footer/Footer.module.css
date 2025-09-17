@@ -63,6 +63,7 @@ text-align: center;
         text-align: center;
         margin-left: 0;
         gap:32px;
+        align-items: center;
     }
     .about{
         display: block;
