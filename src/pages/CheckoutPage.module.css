@@ -1,0 +1,145 @@
+.title{
+    margin-top: 88px;
+    text-align: center;
+    align-self: flex-start;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 514px;
+    gap:32px
+}
+.error{
+    color: red;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.sectionTitle{
+    margin-top: 26px;
+    font-weight: 500;
+font-size: 24px;
+color: #000;
+}
+.input{
+    border: 1px solid #0f0d23;
+border-radius: 6px;
+opacity: 0.2;
+height: 56px;
+width: 100%;
+}
+.shippingContainer{
+    display: flex;
+    flex-direction: column;
+    max-width: 514px;
+    gap:32px
+}
+.gridRow{
+    display: grid;
+  grid-template-columns: 250px 250px;
+  gap: 16px;
+  max-width: 516px;
+  width: 100%
+}
+.shippingMethodTitle{
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.125;
+color: #000;
+margin-top: 32px;
+margin-bottom: 34px;
+}
+.shippingMethodContainer{
+    display: flex;
+    flex-direction: column;
+    max-width: 514px;
+}
+.shippingMethodsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.shippingMethodsGrid label {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 12px 18px;
+  background: #fff;
+  cursor: pointer;
+  max-width: 260px;
+  position: relative;
+  transition: border-color 0.2s;
+  height: 56px;
+}
+.shippingMethodsGrid .oval {
+  border-radius: 10px;
+width: 32px;
+height: 20px;
+  background: linear-gradient(90deg, #5a9bfe 0%, #8ecafe 100%);
+  margin-right: 12px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shippingMethodsGrid input[type="radio"] {
+  transform: scale(1.4);
+}
+.paymentContainer{
+    display: flex;
+    flex-direction: column;
+    max-width: 514px;
+}
+.paymentMethodsGrid{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 514px;
+  
+}
+.paymentMethodsGrid .oval {
+  border-radius: 10px;
+width: 32px;
+height: 20px;
+  background: linear-gradient(90deg, #5a9bfe 0%, #8ecafe 100%);
+  margin-right: 12px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paymentMethodsGrid label {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 12px 18px;
+  background: #fff;
+  cursor: pointer;
+  max-width: 260px;
+  position: relative;
+  transition: border-color 0.2s;
+  height: 56px;
+}
+.paymentMethodsGrid input[type="radio"] {
+  transform: scale(1.4);
+}
+.mainRow{
+    display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.ColumnsContainer{
+    display: flex;
+    gap:96px
+}
+@media screen and (max-width: 320px) {
+    .input{
+        width: 278px;
+    }
+}
