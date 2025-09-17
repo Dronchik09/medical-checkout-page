@@ -158,3 +158,40 @@ font-size: 20px;
 line-height: 0.9;
 color: #fff;
 }
+@media screen and (max-width:768px) {
+  .promoInput {
+    width: 272px;
+    padding: 0 4px;
+  }
+  .promoInput input::placeholder {
+  color: #aaa;
+  font-size: 12px;
+}
+.promoInput button {
+  height: 44px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 10px;
+  background: #5a9bfe;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 4px;
+  margin-left: auto;
+}
+.item:last-child {
+  border-bottom: none;
+  gap:12px;
+}
+.name {
+font-size: 12px;
+}
+.details{
+  font-size:10px;
+}
+.promoInput{
+  gap:0;
+  padding: 4px;
+}
+}

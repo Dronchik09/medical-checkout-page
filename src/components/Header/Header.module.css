@@ -47,8 +47,7 @@
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
-        left:43.7%;
-        width: 320px;
+        width: 100%;
     }
     .logo{
         flex: 1;
@@ -58,17 +57,21 @@
     .container{
         width: 320px;
         margin: 0;
-        padding: 0 24px;
+        padding: 0 12px;
     }
     .nav{
         display: none;
     }
     .icons{
-       gap:20px;
+       gap:10px;
     }
-    .burgerIcon{
-        opacity:1;
-        color: #fff;
-    }
+    .logo {
+    font-size: 18px;
+  }
+    .burgerIcon {
+        opacity: 1;
+    color: #fff;
+    font-size: 24px; /* Збільшено розмір іконки бургер меню */
+  }
     
 }
