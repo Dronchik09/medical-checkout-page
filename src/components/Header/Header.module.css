@@ -41,7 +41,7 @@
 .burgerIcon{
         opacity: 0;
     }
-@media screen and (max-width:768px) {
+@media screen and (max-width:800px) {
     .header{
         display:flex;
         justify-content: space-between;
@@ -51,11 +51,11 @@
     }
     .logo{
         flex: 1;
-  text-align: center;
+  padding-left: 144px;;
   font-weight: bold;
     }
     .container{
-        width: 320px;
+        width: 100%;
         margin: 0;
         padding: 0 12px;
     }
@@ -71,13 +71,27 @@
     .burgerIcon {
         opacity: 1;
     color: #fff;
-    font-size: 24px; /* Збільшено розмір іконки бургер меню */
+    font-size: 24px; 
   }
-    .mobileNav{
+   .mobileNav {
+    position: absolute;
+    top: 70px; 
+    left: 0; 
+    width: 100%;
     background: #5a9bfe;
     display: flex;
     flex-direction: column;
     padding: 20px;
     gap: 16px;
+    z-index: 10; 
+    border-radius: 0 0 0 0;
+    min-width: 150px;
+    align-items: center;
+}
+@media screen and (max-width: 320px) {
+    .logo{
+        padding-left: 0;
+        text-align: center;
     }
+}
 }

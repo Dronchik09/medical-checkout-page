@@ -133,12 +133,16 @@ height: 20px;
     display: flex;
   flex-direction: row;
   align-items: flex-start;
+   gap:96px
 }
 .ColumnsContainer{
     display: flex;
     gap:96px
 }
-@media screen and (max-width: 320px) {
+.checkoutContainer{
+    width: 100%;
+}
+@media screen and (max-width: 800px) {
     .input{
         width: 278px;
     }
@@ -159,7 +163,10 @@ height: 20px;
   max-width: 514px;
   
 }
-.columnsContainer{
-  flex-direction: column;
-}
+ @media screen and (max-width: 800px) {
+  .mainRow{
+    flex-direction: column;
+    width: 100%;
+  }
+ }
 }

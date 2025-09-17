@@ -43,7 +43,7 @@
 
 .container {
    box-sizing: border-box;
-  width:1440px;
+  width:100%;
   margin: 0 auto;
   padding-left: 144px;
   padding-right: 120px;

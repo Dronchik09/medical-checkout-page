@@ -6,9 +6,9 @@ import Feature from "../components/Feature/Feature";
 
 export default function CheckoutPage() {
   return (
-    <div>
+    <div className={css.checkoutContainer}>
       <h1 className={css.title}>Checkout</h1>
-      <div className={css.columnsContainer}>
+      <div className={css.mainRow}>
         <Formik
           initialValues={{
             name: "",
