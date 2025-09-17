@@ -8,7 +8,7 @@ export default function CheckoutPage() {
   return (
     <div>
       <h1 className={css.title}>Checkout</h1>
-      <div className={css.ColumnsContainer}>
+      <div className={css.columnsContainer}>
         <Formik
           initialValues={{
             name: "",

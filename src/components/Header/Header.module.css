@@ -4,6 +4,7 @@
     top: 0;
     left: 0;
     position: fixed;
+    width: 100%;
     z-index: 100;
 }
 .logo{
@@ -37,7 +38,10 @@
     display: flex;
     gap:40px;
 }
-@media screen and (max-width:320px) {
+.burgerIcon{
+        opacity: 0;
+    }
+@media screen and (max-width:768px) {
     .header{
         display:flex;
         justify-content: space-between;
@@ -63,6 +67,8 @@
        gap:20px;
     }
     .burgerIcon{
+        opacity:1;
         color: #fff;
     }
+    
 }

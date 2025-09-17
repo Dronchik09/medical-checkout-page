@@ -142,4 +142,24 @@ height: 20px;
     .input{
         width: 278px;
     }
+    .gridRow{
+      display: flex;
+      flex-direction: column;
+      gap:32px
+    }
+    .shippingMethodsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.paymentMethodsGrid{
+    display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 514px;
+  
+}
+.columnsContainer{
+  flex-direction: column;
+}
 }
