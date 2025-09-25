@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -11,6 +11,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+} */
+
+:root {
+  --font-family: 'Ubuntu', sans-serif;
+  --second-family: 'DM Sans', sans-serif;
 }
 
 a {
@@ -23,8 +28,13 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  font-family: var(--font-family);
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
+
+  /* flex: 1; */
+
   min-width: 320px;
   min-height: 100vh;
 }
@@ -66,3 +76,27 @@ button:focus-visible {
   }
 }
 
+header,
+main,
+footer,
+body,
+section,
+button,
+p,
+a,
+h1,
+h2,
+h3,
+div,
+span,
+input,
+fieldset,
+legend,
+ul,
+li {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}

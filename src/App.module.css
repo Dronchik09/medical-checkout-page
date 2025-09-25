@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,17 +39,27 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 44px 60px;
 }
 
 .container {
-   box-sizing: border-box;
-  width:100%;
+  box-sizing: border-box;
+  width: 100%;
   margin: 0 auto;
   padding-left: 144px;
   padding-right: 120px;
   padding-top: 90px;
 }
+
 @media screen and (max-width: 320px) {
+  .main{
+    
+  }
   .container {
     width: 320px;
     padding-left: 24px;

@@ -1,11 +1,12 @@
-import css from "./Header.module.css";
-import { useState } from "react";
-import SearchIcon from "../../assets/icons/search.svg";
-import UserIcon from "../../assets/icons/user.svg";
-import BagIcon from "../../assets/icons/shoppingBag.svg";
-import { GiHamburgerMenu } from "react-icons/gi";
+import css from './Header.module.css';
+import { useState } from 'react';
+import SearchIcon from '../../assets/icons/search.svg';
+import UserIcon from '../../assets/icons/user.svg';
+import BagIcon from '../../assets/icons/shoppingBag.svg';
+import { GiHamburgerMenu } from 'react-icons/gi';
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className={css.header}>
       <div className={css.container}>
@@ -17,19 +18,28 @@ export default function Header() {
           <a href="#">Contact</a>
           <a href="#">Shop</a>
         </nav>
+
         <div className={css.icons}>
           <button>
             <img src={SearchIcon} alt="Search" className={css.icon} />
           </button>
+
           <button>
             <img src={BagIcon} alt="Shopping Bag" className={css.icon} />
           </button>
+
           <button>
             <img src={UserIcon} alt="User" className={css.icon} />
           </button>
-          <button className={css.burgerIcon} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "✕" : <GiHamburgerMenu />}
+
+          <button
+            type="button"
+            className={css.burgerIcon}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? '✕' : <GiHamburgerMenu />}
           </button>
+
           {isOpen && (
             <div className={css.mobileNav}>
               <a href="#">Home</a>

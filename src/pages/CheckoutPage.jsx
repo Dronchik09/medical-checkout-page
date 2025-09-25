@@ -3,33 +3,44 @@ import OrderSummary from "../components/OrderSummary/OrderSummary";
 import css from "./CheckoutPage.module.css";
 import { validationSchema } from "../utils/validationSchema";
 import Feature from "../components/Feature/Feature";
+import orderData from "../data/checkout.json";
 
 export default function CheckoutPage() {
+  const initialValues = {
+    name: "",
+    email: "",
+    phone: "",
+    street: "",
+    city: "",
+    zip: "",
+    country: "",
+    shipping: "",
+    payment: "",
+  };
+  // const handleSubmit = (values, { resetForm }) => {
+  //   const submitData = {
+  //     ...values,
+  //     items: orderData.items,
+  //   };
+  //   console.log("Form has been sent", submitData);
+  //   resetForm({ values: initialValues });
+  // };
+  console.log(orderData);
   return (
     <div className={css.checkoutContainer}>
       <h1 className={css.title}>Checkout</h1>
       <div className={css.mainRow}>
         <Formik
-          initialValues={{
-            name: "",
-            email: "",
-            phone: "",
-            street: "",
-            city: "",
-            zip: "",
-            country: "",
-            shipping: "",
-            payment: "",
-          }}
+          initialValues={initialValues}
           onSubmit={(values, actions) => {
             console.log("Form has been sent", values);
             actions.resetForm();
           }}
           validationSchema={validationSchema}
         >
-          <Form>
-            <p className={css.sectionTitle}>Personal Details</p>
+          <Form className={css.form}>
             <div className={css.container}>
+              <p className={css.sectionTitle}>Personal Details</p>
               <Field
                 className={css.input}
                 type="text"
@@ -64,8 +75,9 @@ export default function CheckoutPage() {
                 className={css.error}
               />
             </div>
-            <p className={css.sectionTitle}>Shipping Details</p>
+
             <div className={css.shippingContainer}>
+              <p className={css.sectionTitle}>Shipping Details</p>
               <Field
                 className={css.input}
                 type="text"
@@ -109,10 +121,11 @@ export default function CheckoutPage() {
                 className={css.error}
               />
             </div>
+
             <div className={css.shippingMethodContainer}>
               <p className={css.shippingMethodTitle}>Shipping Methode</p>
               <div className={css.shippingMethodsGrid}>
-                <label>
+                <label className={css.radioLabel}>
                   <span className={css.oval}></span>
                   Odeon Express
                   <Field
@@ -122,7 +135,8 @@ export default function CheckoutPage() {
                     value="odeon"
                   />
                 </label>
-                <label>
+
+                <label className={css.radioLabel}>
                   <span className={css.oval}></span>
                   Cipay Jet
                   <Field
@@ -132,7 +146,7 @@ export default function CheckoutPage() {
                     value="cipay jet"
                   />
                 </label>
-                <label>
+                <label className={css.radioLabel}>
                   <span className={css.oval}></span>
                   Gorgom Express
                   <Field
@@ -142,7 +156,8 @@ export default function CheckoutPage() {
                     value="gorgom"
                   />
                 </label>
-                <label>
+
+                <label className={css.radioLabel}>
                   <span className={css.oval}></span>
                   Eunioa Fast
                   <Field
@@ -154,10 +169,11 @@ export default function CheckoutPage() {
                 </label>
               </div>
             </div>
+
             <div className={css.paymentContainer}>
               <p className={css.sectionTitle}>Payment Methode</p>
               <div className={css.paymentMethodsGrid}>
-                <label>
+                <label className={css.radioLabel}>
                   <span className={css.oval}></span>
                   <span>Credit Card</span>
                   <Field
@@ -167,7 +183,8 @@ export default function CheckoutPage() {
                     value="credit"
                   />
                 </label>
-                <label>
+
+                <label className={css.radioLabel}>
                   <span className={css.oval}></span>
                   <span>PayPal</span>
                   <Field
@@ -183,7 +200,7 @@ export default function CheckoutPage() {
         </Formik>
         <OrderSummary />
       </div>
-      {/* <Feature /> */}
+      <Feature />
     </div>
   );
 }

@@ -3,23 +3,24 @@
   border-radius: 12px;
   border: 1px solid #e0e0e0;
   padding: 20px 24px;
-  width: 589px;
+  /* width: 589px; */
   max-width: 100%;
   box-sizing: border-box;
+  width: 100%;
 }
-.title{
-    margin-top: 26px;
-    font-weight: 500;
-font-size: 24px;
-color: #000;
-margin-bottom: 23px;
+.title {
+  margin-top: 26px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 23px;
 }
-.list{
+.list {
   list-style: none;
   padding: 0;
   margin: 0 0 18px 0;
 }
-.item{
+.item {
   display: flex;
   align-items: center;
   padding: 12px 0;
@@ -43,48 +44,86 @@ margin-bottom: 23px;
   gap: 2px;
 }
 .name {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.125;
-color: #000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.125;
+  color: #000;
 }
 .details {
   font-weight: 400;
-font-size: 14px;
-line-height: 1.28571;
-color: #aaa;
-display: flex;
-gap: 32px;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: #aaa;
+  display: flex;
+  gap: 32px;
 }
-.price{
-    font-weight: 500;
-font-size: 16px;
-line-height: 1.125;
-color: #000;
-margin-left: 12px;
+.price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.125;
+  color: #000;
+  margin-left: 12px;
   min-width: 48px;
   text-align: right;
 }
-.promocode{
+.promocode {
   margin-top: 32px;
-    font-weight: 500;
-font-size: 16px;
-line-height: 1.125;
-color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.125;
+  color: #000;
 }
-.promoInput{
-    display: flex;
+
+.promoInputWrap {
+  position: relative;
+  width: 100%;
+  
+  /* display: flex;
   align-items: center;
-    border: 1px solid rgba(15, 13, 35, 0.2);
-border-radius: 12px;
-width: 589px;
-height: 60px;
-padding: 0 8px 0 20px;
-  box-sizing: border-box;
+
+  border-radius: 12px;
+  height: 60px;
+  padding: 0 8px 0 20px;
   margin-bottom: 76px;
-  gap: 12px;
+  gap: 12px; */
 }
-.promoInput input {
+
+.promoInput {
+  font-family: var(--second-family);
+  width: 100%;
+  display: block;
+  border: 1px solid rgb(15, 13, 35, 0.2);
+  border-radius: 12px;
+  outline: none;
+  font-size: 16px;
+  line-height: 112;
+  color: #000;
+  padding: 21px 24px;
+  height: 60px;
+}
+
+.promoInput::placeholder {
+  color: #aaa;
+}
+
+.applyBtn {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  font-family: var(--second-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.12;
+  padding: 13px 22px;
+  border-radius: 10px;
+  background: #5a9bfe;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* .promoInput input {
   flex: 1 1 auto;
   border: none;
   outline: none;
@@ -94,10 +133,12 @@ padding: 0 8px 0 20px;
   height: 100%;
   opacity: 0.2;
 }
+
 .promoInput input::placeholder {
   color: #aaa;
   font-size: 16px;
 }
+
 .promoInput button {
   height: 44px;
   padding: 0 28px;
@@ -111,90 +152,129 @@ padding: 0 8px 0 20px;
   margin-right: 4px;
   margin-left: auto;
 }
+
 .promoInput button:hover {
   background: #3887fa;
-}
+} */
+
 .priceDetail {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 16px;
-    font-weight: 400;
-font-size: 20px;
-line-height: 0.9;
-color: #000;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 0.9;
+  color: #000;
+  padding-top: 16px;
 }
 
 .total .priceDetail:last-child {
-    border-bottom: none;
-    margin-top: 12px;
-    padding-bottom: 0;
+  border-bottom: none;
+  margin-top: 12px;
+  padding-bottom: 0;
 }
-.price{
+.price {
   font-weight: 400;
-font-size: 20px;
-line-height: 0.9;
-color: #000;
-margin-bottom: 0;
+  font-size: 20px;
+  line-height: 0.9;
+  color: #000;
+  margin-bottom: 0;
 }
-.totalPrice{
+.totalPrice {
   font-weight: bold;
 }
-.total{
+.total {
   display: flex;
   flex-direction: column;
+  padding-top: 16px;
 }
-.checkoutButton{
+.checkoutButton {
   margin-top: 43px;
   width: 100%;
   border-radius: 16px;
   height: 80px;
   background: #5a9bfe;
-  margin-bottom:120px;
+  margin-bottom: 120px;
 }
-.checkoutSpan{
+.checkoutSpan {
   font-weight: 500;
-font-size: 20px;
-line-height: 0.9;
-color: #fff;
+  font-size: 20px;
+  line-height: 0.9;
+  color: #fff;
 }
-@media screen and (max-width:800px) {
-  .promoInput {
-    width: 320px;
-    padding: 0 px;
-  }
-  .promoInput input::placeholder {
-  color: #aaa;
-  font-size: 12px;
+.deleteIcon{
+  display: none;
+  width: 24px;
+  height: 24px;
 }
-.promoInput button {
-  height: 44px;
-  padding: 0 10px;
+.item:hover .deleteIcon {
+  display: inline; /* показується тільки при наведенні */
+  color: red;
+  cursor: pointer;
+}
+.deleteBtn {
+  background: none;
   border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteBtn:hover .deleteIcon {
+  color: red; /* підсвітка при наведенні */
+}
+@media screen and (max-width: 800px) {
+  .promoInput input::placeholder {
+    color: #aaa;
+    font-size: 12px;
+  }
+  /* .promoInput button {
+    height: 44px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 10px;
+    background: #5a9bfe;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 4px;
+    margin-left: auto;
+  } */
+  .item:last-child {
+    border-bottom: none;
+    gap: 12px;
+  }
+  .name {
+    font-size: 12px;
+  }
+  .details {
+    font-size: 10px;
+  }
+  .promoInput {
+    gap: 0;
+    padding: 4px;
+  }
+  .summaryBox {
+    width: 100%;
+  }
+  .applyBtn {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  font-family: var(--second-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.12;
+  padding: 13px 22px;
   border-radius: 10px;
   background: #5a9bfe;
+  border: none;
   color: #fff;
-  font-size: 12px;
-  font-weight: 500;
   cursor: pointer;
-  margin-right: 4px;
-  margin-left: auto;
-}
-.item:last-child {
-  border-bottom: none;
-  gap:12px;
-}
-.name {
-font-size: 12px;
-}
-.details{
-  font-size:10px;
-}
-.promoInput{
-  gap:0;
-  padding: 4px;
-}
-.summaryBox{
-  width:100%;
 }
 }

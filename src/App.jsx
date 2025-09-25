@@ -7,12 +7,12 @@ import css from "./App.module.css";
 export default function App() {
   return (
     <BrowserRouter>
-      <div className={css.container}>
-        <Header />
+      <Header />
+      <main className={css.main}>
         <Routes>
           <Route path="/" element={<CheckoutPage />} />
         </Routes>
-      </div>
+      </main>
       <Footer />
     </BrowserRouter>
   );
