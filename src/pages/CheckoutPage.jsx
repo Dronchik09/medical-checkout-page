@@ -7,29 +7,29 @@ import Feature from "../components/Feature/Feature";
 // import orderData from '../data/checkout.json';
 
 export default function CheckoutPage() {
-  // const initialValues = {
-  //   name: '',
-  //   email: '',
-  //   phone: '',
-  //   street: '',
-  //   city: '',
-  //   zip: '',
-  //   country: '',
-  //   shipping: '',
-  //   payment: '',
-  // };
-
   const initialValues = {
-    name: "Qwe",
-    email: "Qwe@rt.yu",
-    phone: "+380123456789",
-    street: "Qwe",
-    city: "Qwe",
-    zip: "12345",
-    country: "Qwe",
-    shipping: "odeon",
-    payment: "credit",
-  };
+    name: '',
+    email: '',
+    phone: '',
+    street: '',
+     city: '',
+     zip: '',
+     country: '',
+     shipping: '',
+     payment: '',
+   };
+
+  // const initialValues = {
+  //   name: "Qwe",
+  //   email: "Qwe@rt.yu",
+  //   phone: "+380123456789",
+  //   street: "Qwe",
+  //   city: "Qwe",
+  //   zip: "12345",
+  //   country: "Qwe",
+  //   shipping: "odeon",
+  //   payment: "credit",
+  // };
 
   const dataInOrder = localStorage.getItem("pills");
 
@@ -84,7 +84,6 @@ export default function CheckoutPage() {
                   className={css.error}
                 />
 
-                {/* <div className={css.shippingContainer}> */}
                 <p className={css.sectionTitle}>Shipping Details</p>
                 <Field
                   className={css.input}
@@ -132,8 +131,6 @@ export default function CheckoutPage() {
                   component="span"
                   className={css.error}
                 />
-
-                {/* </div> */}
 
                 <div className={css.shippingMethodContainer}>
                   <p className={css.shippingMethodTitle}>Shipping Methode</p>
@@ -214,9 +211,7 @@ export default function CheckoutPage() {
             <OrderSummary />
           </Form>
         </Formik>
-        {/* <OrderSummary /> */}
       </div>
-
       <Feature />
     </div>
   );

@@ -1,14 +1,11 @@
 .title {
-  /* margin-top: 88px; */
   text-align: center;
   margin-bottom: 40px;
-  /* align-self: flex-start; */
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  /* max-width: 514px; */
   gap: 32px;
 }
 
@@ -34,7 +31,6 @@
 .shippingContainer {
   display: flex;
   flex-direction: column;
-  /* max-width: 514px; */
   gap: 32px;
 }
 
@@ -42,7 +38,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  /* max-width: 516px; */
   width: 100%;
 }
 
@@ -68,7 +63,6 @@
 .shippingMethodContainer {
   display: flex;
   flex-direction: column;
-  /* max-width: 514px; */
 }
 
 .shippingMethodsGrid {
@@ -82,7 +76,6 @@
   width: 32px;
   height: 20px;
   background: linear-gradient(90deg, #5a9bfe 0%, #8ecafe 100%);
-  /* margin-right: 12px; */
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -93,17 +86,14 @@
   display: flex;
   align-items: center;
   column-gap: 2px;
-  /* flex-direction: row; */
   justify-content: space-between;
   border: 1px solid #e0e0e0;
   border-radius: 12px;
   padding: 12px 18px;
   background: #fff;
   cursor: pointer;
-  /* max-width: 260px; */
   position: relative;
   transition: border-color 0.2s;
-  /* height: 56px; */
   font-size: 16px;
   line-height: 1.12;
 }
@@ -115,13 +105,11 @@
 .paymentContainer {
   display: flex;
   flex-direction: column;
-  /* max-width: 514px; */
 }
 .paymentMethodsGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  /* max-width: 514px; */
 }
 .paymentMethodsGrid .oval {
   border-radius: 10px;
@@ -144,13 +132,9 @@
   padding: 12px 18px;
   background: #fff;
   cursor: pointer;
-  /* max-width: 260px; */
   position: relative;
   transition: border-color 0.2s;
   height: 56px;
-}
-.paymentMethodsGrid input[type='radio'] {
-  transform: scale(1.4);
 }
 
 .ColumnsContainer {

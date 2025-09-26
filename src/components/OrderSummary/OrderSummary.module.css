@@ -3,7 +3,6 @@
   border-radius: 12px;
   border: 1px solid #e0e0e0;
   padding: 20px 24px;
-  /* width: 589px; */
   max-width: 100%;
   box-sizing: border-box;
   width: 100%;
@@ -78,15 +77,6 @@
   position: relative;
   width: 100%;
   margin-bottom: 40px;
-  
-  /* display: flex;
-  align-items: center;
-
-  border-radius: 12px;
-  height: 60px;
-  padding: 0 8px 0 20px;
-  margin-bottom: 76px;
-  gap: 12px; */
 }
 
 .promoInput {
@@ -124,40 +114,6 @@
   cursor: pointer;
 }
 
-/* .promoInput input {
-  flex: 1 1 auto;
-  border: none;
-  outline: none;
-  background: transparent;
-  font-size: 16px;
-  color: #222;
-  height: 100%;
-  opacity: 0.2;
-}
-
-.promoInput input::placeholder {
-  color: #aaa;
-  font-size: 16px;
-}
-
-.promoInput button {
-  height: 44px;
-  padding: 0 28px;
-  border: none;
-  border-radius: 10px;
-  background: #5a9bfe;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  margin-right: 4px;
-  margin-left: auto;
-}
-
-.promoInput button:hover {
-  background: #3887fa;
-} */
-
 .priceDetail {
   display: flex;
   justify-content: space-between;
@@ -194,7 +150,6 @@
   border-radius: 16px;
   height: 80px;
   background: #5a9bfe;
-  margin-bottom: 120px;
 }
 .checkoutSpan {
   font-weight: 500;
@@ -208,7 +163,7 @@
   height: 24px;
 }
 .item:hover .deleteIcon {
-  display: inline; /* показується тільки при наведенні */
+  display: inline; 
   color: red;
   cursor: pointer;
 }
@@ -223,26 +178,13 @@
 }
 
 .deleteBtn:hover .deleteIcon {
-  color: red; /* підсвітка при наведенні */
+  color: red; 
 }
 @media screen and (max-width: 800px) {
   .promoInput input::placeholder {
     color: #aaa;
     font-size: 12px;
   }
-  /* .promoInput button {
-    height: 44px;
-    padding: 0 10px;
-    border: none;
-    border-radius: 10px;
-    background: #5a9bfe;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 500;
-    cursor: pointer;
-    margin-right: 4px;
-    margin-left: auto;
-  } */
   .item:last-child {
     border-bottom: none;
     gap: 12px;
@@ -276,10 +218,6 @@
   color: #fff;
   cursor: pointer;
 }
-}
-@media screen and (max-width: 480px) {
-  
-  
 }
 @media screen and (max-width: 768px) {
   .title{

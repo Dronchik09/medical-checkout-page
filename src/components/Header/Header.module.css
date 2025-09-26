@@ -2,13 +2,9 @@
   max-width: 1440px;
   padding: 0 120px;
   margin: 0 auto;
-
   background-color: #5a9bfe;
   height: 70px;
   top: 0;
-  /* left: 0; */
-  /* position: fixed; */
-  /* width: 100%; */
   z-index: 100;
 }
 
@@ -36,7 +32,6 @@
   background: transparent;
   border: none;
   padding: 0;
-  /* margin: 0 8px; */
 }
 
 .icons {
@@ -75,12 +70,6 @@
     min-width: 150px;
     align-items: center;
   }
-
-  /* @media screen and (max-width: 799px) {
-    .header {
-      padding: 0 20px;
-    }
-  } */
 
   @media screen and (max-width: 480px) {
     .header {
