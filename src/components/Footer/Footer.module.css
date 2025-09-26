@@ -1,15 +1,16 @@
 .footer {
   max-width: 1440px;
-  padding: 0 120px;
+  padding: 40px 60px 0px;
   margin: 0 auto;
   background-color: #031525;
+
 }
 
 .footerInfo {
   display: flex;
   flex-direction: row;
-  gap: 162px;
-  /* margin-left: 144px; */
+  justify-content: space-between;
+  margin-bottom: 123px;
 }
 .footerList {
   display: flex;
@@ -57,11 +58,10 @@ a {
   display: flex;
   row-gap: 16px;
 }
-@media screen and (max-width: 800px) {
-  .footer {
-    width: 100%;
-    padding: 0 12px;
-  }
+@media screen and (max-width: 768px) {
+  .footer{
+      padding: 30px 12px 0px 12px;
+    }
 
   .footerInfo {
     flex-direction: column;
@@ -74,4 +74,14 @@ a {
   .about {
     display: block;
   }
+  .socials{
+      margin-bottom: 30px;
+    }
 }
+  @media screen and (max-width: 480px) {
+    
+    .socials{
+      margin-bottom: 16px;
+    }
+  }
+

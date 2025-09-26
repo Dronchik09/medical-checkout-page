@@ -2,9 +2,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap:143px;
-    margin-bottom: 120px;
+    justify-content: space-between;
+    gap:40px;
 }
 .featureMedal{
     display: flex;
@@ -13,11 +12,12 @@
     justify-content: center;
 }
 .borderIcon{
-    width:40px;
-    height: 40px;
+    width:72px;
+    height: 72px;
   border-radius: 50%;       
   background-color: #ffe5d0; 
-  padding: 8px;
+  padding: 16px;
+  margin-bottom: 40px;
 }
 .featureDescription{
     font-weight: 400;
@@ -28,10 +28,33 @@ color: #aaa;
 margin: 0;
 }
 .featureTitle{
-    margin-bottom: 0;
+    margin-bottom: 8px;
+}
+h4{
+    margin-top: 0px;
 }
 @media screen and (max-width: 768px) {
     .featureContainer {
     flex-direction: column;
+    gap:71px;
+    margin-bottom: 90px;
 }
+.featureMedal{
+        gap:8px;
+    }
+    .borderIcon{
+    width:40px;
+    height: 40px;
+  border-radius: 50%;       
+  background-color: #ffe5d0; 
+  padding: 8px;
+}
+}
+
+@media screen and (max-width: 480px) {
+    .featureContainer{
+        gap:48px;
+        margin-bottom: 60px;
+    }
+    
 }

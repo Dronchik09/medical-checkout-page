@@ -13,15 +13,12 @@
 }
 
 .container {
-  /* max-width: 100%; */
-  /* margin: 0 auto; */
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 70px;
-  /* box-sizing: border-box; */
-  /* padding-left: 144px;
-  padding-right: 24px; */
+  margin: 0 auto;
 }
 
 .logo {
@@ -32,7 +29,7 @@
 
 .nav {
   display: flex;
-  gap: 40px;
+  gap: 20px; 
 }
 
 .icons button {
@@ -49,49 +46,19 @@
 
 .burgerIcon {
   display: none;
-  /* opacity: 0; */
   color:#fff
 }
 
-@media screen and (max-width: 800px) {
-  .header {
-    padding: 0 60px;
-  }
-
+@media screen and (max-width: 768px) {
   .logo {
-    /* flex: 1; */
-    /* padding-left: 144px; */
-    /* font-weight: bold; */
-    font-size: 18px;
+    font-size: 14px;
   }
-
-  .container {
-    width: 100%;
-    margin: 0;
-    padding: 0 12px;
-  }
-
   .nav {
     display: none;
+  
   }
-
-  .icons {
-    gap: 10px;
-  }
-
-  .burgerIcon {
-    display: block;
-
-    min-width: 24px;
-    aspect-ratio: 1;
-
-    border: none;
-    outline: none;
-    background: transparent;
-
-    /* opacity: 1;
-    color: #fff;
-    font-size: 24px; */
+  .navLink{
+    font-size: 12px;
   }
   .mobileNav {
     position: absolute;
@@ -109,32 +76,51 @@
     align-items: center;
   }
 
-  @media screen and (min-width: 321px) and (max-width: 799px) {
+  /* @media screen and (max-width: 799px) {
     .header {
       padding: 0 20px;
     }
-  }
+  } */
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 480px) {
     .header {
-      padding: 0;
+      
+      padding: 12px 15px;
     }
-
-    .logo {
-      /* padding-left: 0;
-      text-align: center; */
+    .icons{
+      gap:16px;
+    }
+    .burgerIcon{
+      display: block;
+      width: 12px;
+      height: 12px;
+    }
+    .icon{
+      width: 12px;
+      height: 12px;
     }
   }
 }
 
-/* ⬆ менш ніж 480  */
-
-@media (min-width: 480px) {
+@media (max-width: 768px) {
+  .header{
+    padding: 0 30px;
+  }
+  .icons{
+      gap:15px;
+    }
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+  .icon{
+      width: 16px;
+      height: 16px;
+    }
 }
-
-@media (min-width: 768px) {
+@media (min-width: 480px) and (max-width: 768px) {
+    .nav{
+      display: flex;
+      gap: 10px;
+    }
 }
-
-@media (min-width: 1024px) {
-}
-

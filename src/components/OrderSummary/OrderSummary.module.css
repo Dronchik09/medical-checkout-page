@@ -7,9 +7,9 @@
   max-width: 100%;
   box-sizing: border-box;
   width: 100%;
+  margin-bottom: 32px;
 }
 .title {
-  margin-top: 26px;
   font-weight: 500;
   font-size: 24px;
   color: #000;
@@ -67,16 +67,17 @@
   text-align: right;
 }
 .promocode {
-  margin-top: 32px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.125;
   color: #000;
+  margin-bottom: 24px;
 }
 
 .promoInputWrap {
   position: relative;
   width: 100%;
+  margin-bottom: 40px;
   
   /* display: flex;
   align-items: center;
@@ -187,10 +188,8 @@
 .total {
   display: flex;
   flex-direction: column;
-  padding-top: 16px;
 }
 .checkoutButton {
-  margin-top: 43px;
   width: 100%;
   border-radius: 16px;
   height: 80px;
@@ -277,4 +276,28 @@
   color: #fff;
   cursor: pointer;
 }
+}
+@media screen and (max-width: 480px) {
+  
+  
+}
+@media screen and (max-width: 768px) {
+  .title{
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .promocode{
+    font-size: 12px;
+    margin-bottom: 24px;
+  }
+  .promoInput::placeholder {
+    color: #aaa;
+    font-size: 12px;
+  }
+  .priceDetail{
+    font-size: 14px;
+  }
+  .price{
+    font-size: 14px;
+  }
 }

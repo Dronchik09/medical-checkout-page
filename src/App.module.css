@@ -44,7 +44,7 @@
 .main {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 44px 60px;
+  padding: 40px 60px 60px;
 }
 
 .container {
@@ -56,9 +56,15 @@
   padding-top: 90px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .main{
-    
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    padding: 10px 15px 15px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
   }
   .container {
     width: 320px;
@@ -66,10 +72,13 @@
     padding-right: 24px;
   }
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 768px) {
   .container {
     width: 100%;
     padding-left: 24px;
     padding-right: 24px;
+  }
+  .main{
+    padding: 20px 30px 30px;
   }
 }
